@@ -1,0 +1,29 @@
+{% extends "gestionlibros/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<html>
+
+<body>
+    
+   {% for libro in libros %}
+    
+<div><p>
+
+   <h2 style="color: white;"> {{libro.titulo}} </h2>
+
+   <p style="color: white;"> {{libro.contenido}} - Tu puntuacion: {{libro.rating}} </p>
+   
+   <p><img src="{{libro.imagen}}"></p>
+
+</p></div>
+
+</body>
+
+</html>
+
+   {% endfor %}
+
+{% endblock %}

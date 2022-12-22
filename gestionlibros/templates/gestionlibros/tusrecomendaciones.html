@@ -1,0 +1,27 @@
+{% extends "gestionlibros/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<html>
+
+<body>
+    
+   {% for proyectotfm in proyectotfms %}
+    
+<div><p>
+
+   <h2 style="color: white;"> {{proyectotfm.titulo}} </h2>
+   
+   <p><img src="{{proyectotfm.imagen}}"></p>
+
+</p></div>
+
+</body>
+
+</html>
+
+   {% endfor %}
+
+{% endblock %}
